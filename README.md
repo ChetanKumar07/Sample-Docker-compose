@@ -17,10 +17,10 @@ docker-compose config
 docker-compose down
 
 #Stop and remove all docker containers:
-docker stop $(docker ps -a -q)
+docker stop $(docker ps -a -q)  
 docker rm $(docker ps -a -q)
 
-#Remove all docker images
+#Remove all docker images:
 docker rmi $(docker images -a -q)
 
 
